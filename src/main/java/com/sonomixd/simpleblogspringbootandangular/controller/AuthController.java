@@ -24,7 +24,7 @@ public class AuthController {
 	@Autowired
 	private AuthService authService;
 
-	
+
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public ResponseEntity signup(@RequestParam("userName") String userName, @RequestParam("email") String email,
 			@RequestParam("password") String password, @RequestParam("file") MultipartFile file) {
@@ -50,6 +50,7 @@ public class AuthController {
 				registerRequest.setProfile_photo(fileName);
 
 			} catch (Exception e) {
+			    e.getMessage();
 			}
 		}
 

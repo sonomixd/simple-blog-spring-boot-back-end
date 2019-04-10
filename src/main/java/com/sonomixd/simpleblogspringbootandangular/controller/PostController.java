@@ -57,17 +57,6 @@ public class PostController {
         return new ResponseEntity<>(postService.getByCategory(category), HttpStatus.OK);
     }
 
-//    @PostMapping("/addImage")
-//    public ResponseEntity addImage(@RequestBody MultipartFile file, PostDto postDto){
-//        postService.addImage(file, postDto);
-//
-//        return new ResponseEntity(HttpStatus.OK);
-//    }
-
-
-
-
-
 
 
 }

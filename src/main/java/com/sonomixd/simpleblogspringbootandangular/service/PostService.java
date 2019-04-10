@@ -73,7 +73,6 @@ public class PostService {
                 if (!dir.exists())
                     dir.mkdirs();
                 String fileName = new Date().getTime() + file.getOriginalFilename();
-                // Create the file on server
                 File serverFile = new File(dir.getAbsolutePath() + File.separator + fileName);
                 BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
                 stream.write(bytes);
